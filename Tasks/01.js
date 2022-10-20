@@ -1,6 +1,6 @@
 // Проверьте, является ли первый символ строки прописным
-// Напишите программу на JavaScript, чтобы проверить, 
+// Напишите программу на JavaScript, чтобы проверить,
 // является ли первый символ строки прописным.
 
-console.log(/^[A-Z]/g.test('Abcd')) // true 
-console.log(/^[A-Z]/g.test('abcd')) // false
+console.log(/^[A-Z]/g.test('Abcd')); // true
+console.log(/^[A-Z]/g.test('abcd')); // false

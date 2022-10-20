@@ -1,10 +1,5 @@
 // Подсчет количества гласных в заданной строке
 // Напишите реализацию для подсчета количества гласных в заданной строке.
 
-const str = 'JavaScript validation with regular expression';
-let count = 0;
-str.replace(/[aeiou]+/gi, function (str) {
-  count++;
-});
-
-console.log(count); // 15
+console.log(/^\w+$/gi.test('39828sad')); // true 
+console.log(/^\w+$/gi.test('7343#$sew')); // false 
