@@ -156,3 +156,4 @@ console.log(/^\d{12}$/.test('123456789101'));
 const str = '12f321fc432'.match(/\d/g);
 
 console.log(str.reduce((prev, next) => +prev + +next));
+// ---> 18
