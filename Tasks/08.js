@@ -1,5 +1,10 @@
-// Заменить слова в строке
-// Напишите программу, которая без учета регистра, 
-// заменит "Site" на "shop" в строке.
+// Подсчет количества гласных в заданной строке
+// Напишите реализацию для подсчета количества гласных в заданной строке.
 
-console.log('Visit Site!'.replace(/site/gi, 'shop')); // Visit shop! 
+const str = 'JavaScript validation with regular expression';
+let count = 0;
+str.replace(/[aeiou]+/gi, function (str) {
+  count++;
+});
+
+console.log(count); // 15

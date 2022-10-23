@@ -1,5 +1,18 @@
-// Подсчет количества гласных в заданной строке
-// Напишите реализацию для подсчета количества гласных в заданной строке.
+// Подсчитать количество слов в строке
+// Напишите программу для подсчета количества слов в строке.
+// Примечание:
+// - Удалите пробелы из начальной и конечной позиции.
+// - Преобразовать 2 или более пробелов в 1.
 
-console.log(/^\w+$/gi.test('39828sad')); // true 
-console.log(/^\w+$/gi.test('7343#$sew')); // false 
+let str = ' this       string      has  five words ';
+
+str = str.replace(/\s+/g, ' '); // ' this string has five words '
+str = str.replace(/^\s|\s$/g, ''); // 'this string has five words'
+
+let count = 0;
+str.replace(/[a-zA-Z0-9]+/g, function (str) {
+  count++;
+  return str;
+});
+
+console.log(count); // 5
